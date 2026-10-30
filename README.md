@@ -2,9 +2,18 @@
 
 **AI, GTM & Automation Systems** · Milan area, Italy · [LinkedIn](https://www.linkedin.com/in/giacomo-monti)
 
-I turn business problems into working AI systems. My background is B2B technology sales (Salesforce, Alibaba.com); since mid-2025 I have been designing, building and rolling out LLM workflows that sales and onboarding teams actually use.
+I turn business problems into working AI and GTM systems. My background is B2B technology sales (Salesforce, Alibaba.com); since mid-2025 I have been designing, building and rolling out LLM workflows, CRM data models and automations that sales and onboarding teams actually use.
 
-Most of my building happens in private repositories, so the contribution graph below is the best public view of my day-to-day work.
+Most of my building happens in private repositories, so the contribution graph below is the best public view of my day-to-day work. The case studies below are documented in public.
+
+## Case studies
+
+Two connected growth systems I designed and built for **Jackmonx**, my calisthenics brand. Both write to one shared CRM (Leads + Activities), linking social acquisition to website conversion.
+
+| Case study | What it does | Stack |
+|---|---|---|
+| [**Instagram-to-CRM Growth Engine**](https://github.com/giacomo-monti/instagram-to-crm-growth-engine) | Comment → public reply → DM → two-step follow verification → resource delivery → waitlist, plus a CRM sync that creates or updates Leads without duplicates and keeps original attribution | Instagram · ManyChat · Make · Notion API |
+| [**Website-to-CRM Lifecycle Events Engine**](https://github.com/giacomo-monti/website-to-crm-lifecycle-events-engine) | Website signups, checkout intent and purchases sent as JSON events → event deduplication → identity resolution → event-specific Activities with commercial context | Lovable · Make webhooks · JSON · Notion API |
 
 ## What I'm building now
 
@@ -25,16 +34,18 @@ The code is private. Happy to talk about the engineering approach.
 |---|---|---|
 | Serverless LLM extraction pipeline | Google Sheets → Apps Script → LLM API → JSON → validation, for customer onboarding; models compared on cost, speed and accuracy | ~870 unstructured rows in < 3 min at ~$0.001 per run |
 | AI enrichment & tiering framework | Company-level and decision-maker-level enrichment with modular prompting; ~65% automated, ~35% human-reviewed | 10,000+ records for a ~30-person sales team |
-| Workflow automation | Make.com decision trees (plus n8n experiments) connecting APIs, webhooks, LLM steps and CRM | Deterministic logic kept separate from LLM steps, with fallbacks and human checkpoints |
+| Workflow automation | Make.com decision trees (plus n8n) connecting APIs, webhooks, LLM steps and CRM | Deterministic logic kept separate from LLM steps, with fallbacks and human checkpoints |
 
 ## How I work
 
+- Start from the commercial question: does this help someone book a meeting or close a deal?
 - Use the model where interpretation adds value, keep deterministic logic where it must be exact, keep a human in the loop where the stakes are high.
 - Constrain outputs to structured formats, validate everything, measure cost per run.
+- Label every claim as implemented, tested or planned.
 
 ## Stack
 
-Python · pytest · Git/GitHub · Docker · APIs & webhooks · Google Apps Script · Make.com · n8n · Claude (incl. MCP) · ChatGPT · LLaMA via Together AI · HubSpot
+Python · pytest · Git/GitHub · Docker · APIs & webhooks · JSON · Google Apps Script · Make.com · n8n · ManyChat · Notion API · HubSpot · Clay · Lovable · Claude (incl. MCP) · ChatGPT · LLaMA via Together AI
 
 ## Learning
 
